@@ -1,33 +1,52 @@
 html, body{
     padding: 0;
     margin: 0;
-    overflow-x: hidden;
 }
 
 body{
-    width: 100vw;
     height: 100vh;
-    background-color: #f0cde3;
 }
 
-header{
-
+#header{
+    padding: 1%;
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
     width: 100%;
 }
 
 .logo{
-    width: 100%;
+    width: 40%;
     text-align: center;
 }
 
 img{
-    width: 10rem;
+    width: 8rem;
+    border: 5px solid black;
+    border-radius: 50%;
 }
 
 .RedeSociais{
-    text-align: center;
-    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+ }
+
+ .RedeSociais a{
+    width: 40px;
+ }
+
+button{
+    margin-right: 2%;
 }
 
+@media screen and (min-width: 600px) {
 
-
+    img{
+        width: 10rem;
+    }
+    
+     .RedeSociais a{
+        width: 50px;
+     }
+ 
+  }
