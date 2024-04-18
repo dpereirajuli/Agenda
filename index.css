@@ -1,10 +1,12 @@
 html, body{
     padding: 0;
     margin: 0;
+
 }
 
 body{
     height: 100vh;
+    
 }
 
 #header{
@@ -13,17 +15,36 @@ body{
     align-items: start;
     justify-content: space-between;
     width: 100%;
+    background-color: rgba(226, 226, 226, 0.719);
 }
 
 .logo{
     width: 40%;
     text-align: center;
+    position: relative;
+    display: inline-block;
 }
 
 img{
     width: 8rem;
-    border: 5px solid black;
     border-radius: 50%;
+
+    box-shadow: 0 0 10px 5px rgba(22, 22, 22, 0.5); /* Define uma sombra vermelha com efeito de neon */
+
+    /* Configuração da animação */
+    animation: img 1s ease-in-out alternate infinite;
+
+}
+
+
+/* Animação de piscar do efeito neon */
+@keyframes img {
+    from {
+        box-shadow: 0 0 10px 5px rgba(34, 34, 34, 0.5); /* Sombra vermelha */
+    }
+    to {
+        box-shadow: 0 0 20px 10px rgba(19, 18, 18, 0.8); /* Sombra vermelha mais intensa */
+    }
 }
 
 .RedeSociais{
@@ -35,6 +56,13 @@ img{
     width: 40px;
  }
 
+ .BtnWhats {
+    position: fixed;
+    right: 2rem;
+    bottom: 2rem;
+    z-index: 999;
+    width: 6rem;
+}
 
 @media screen and (min-width: 600px) {
 
